@@ -67,20 +67,6 @@
               />
             </div>
           </div>
-
-          <div class="row">
-            <div class="col-md-12 form-group mb-3">
-              <label for="barang" class="form-label">Barang</label>
-              <input
-                id="barang"
-                type="file"
-                name="barang"
-                class="form-control"
-                @change="onFileChange"
-              />
-            </div>
-          </div>
-
           <div class="row">
             <div class="col-md-12 form-group">
               <input
@@ -132,7 +118,6 @@ export default {
         unit: "",
         stok: "",
         hargaSatuan: "",
-        barang: "",
       },
     };
   },
@@ -150,15 +135,6 @@ export default {
         this.$router.push("/items");
       });
     },
-    // onFileChange(event) {
-    //   const file = event.target.files[0];
-    //   if (file) {
-    //     this.items.barang = file;
-    //   } else {
-    //     this.items.barang = null;
-    //     console.log("salah ya..");
-    //   }
-    // },
   },
 };
 </script>

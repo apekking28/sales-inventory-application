@@ -16,8 +16,6 @@
                 <th scope="col">Unit</th>
                 <th scope="col">Stok</th>
                 <th scope="col">Harga</th>
-                <th scope="col">Barang</th>
-                <!-- Add other columns here (email, alamat, diskon, tipeDiskon, ktp) -->
                 <th scope="col">Action</th>
               </tr>
             </thead>
@@ -28,8 +26,6 @@
                 <td>{{ item.unit }}</td>
                 <td>{{ item.stok }}</td>
                 <td>{{ item.hargaSatuan }}</td>
-                <td>{{ item.barang }}</td>
-                <!-- Display other columns here (email, alamat, diskon, tipeDiskon, ktp) -->
                 <td>
                   <a class="btn btn-primary" :href="`/items/edit/${item.id}`"
                     >Edit</a

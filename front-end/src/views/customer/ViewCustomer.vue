@@ -6,7 +6,7 @@
       <div class="row">
         <div class="col-md-12">
           <h1 class="text-center">Customer</h1>
-          <hr>
+          <hr />
           <a href="/customers/add" class="btn btn-primary">Add Customer</a>
           <table class="table table-striped">
             <thead>
@@ -16,8 +16,6 @@
                 <th scope="col">Email</th>
                 <th scope="col">Contact</th>
                 <th scope="col">Alamat</th>
-                <th scope="col">KTP</th>
-                <!-- Add other columns here (email, alamat, diskon, tipeDiskon, ktp) -->
                 <th scope="col">Action</th>
               </tr>
             </thead>
@@ -28,11 +26,16 @@
                 <td>{{ customer.email }}</td>
                 <td>{{ customer.contact }}</td>
                 <td>{{ customer.alamat }}</td>
-                <td>{{ customer.ktp }}</td>
-                <!-- Display other columns here (email, alamat, diskon, tipeDiskon, ktp) -->
                 <td>
-                  <a class="btn btn-primary" :href="`/customers/edit/${customer.id}`">Edit</a>
-                  <button class="btn btn-danger mx-2" @click="deleteCustomer(customer.id)">
+                  <a
+                    class="btn btn-primary"
+                    :href="`/customers/edit/${customer.id}`"
+                    >Edit</a
+                  >
+                  <button
+                    class="btn btn-danger mx-2"
+                    @click="deleteCustomer(customer.id)"
+                  >
                     Delete
                   </button>
                 </td>

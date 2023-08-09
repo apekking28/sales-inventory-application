@@ -22,12 +22,8 @@ public class Item {
     private String unit;
     private int stok;
     private double hargaSatuan;
-    private int qty;
     @Column(columnDefinition = "boolean default false")
     private boolean deleted;
-
-//    @Lob
-//    private byte[] barang;
 
     public boolean getDeleted() {
         return this.deleted;

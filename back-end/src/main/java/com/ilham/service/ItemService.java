@@ -43,8 +43,6 @@ public class ItemService {
                 .stok(item.getStok())
                 .unit(item.getUnit())
                 .hargaSatuan(item.getHargaSatuan())
-                .qty(findItem.getQty())
-//                .barang(findItem.getBarang())
                 .build();
 
         return itemRepository.save(savedItem);

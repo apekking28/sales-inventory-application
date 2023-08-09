@@ -25,10 +25,6 @@ public class Customer {
     @Column(columnDefinition = "boolean default false")
     private boolean deleted;
 
-//    @Lob
-//    @Type(type = "org.hibernate.type.ImageType")
-//    private byte[] ktp;
-
     public boolean getDeleted() {
         return this.deleted;
     }

@@ -154,6 +154,4 @@ export default {
 };
 </script>
 
-<style scoped>
-/* Gaya sesuaikan dengan kebutuhan desain Anda */
-</style>
+<style scoped></style>

@@ -67,7 +67,6 @@ public class SalesService {
             qty += sales.getQty();
 
             item1.setStok(item1.getStok() - sales.getQty());
-            item1.setQty(0);
             itemService.saveItem(item1);
         }
 
